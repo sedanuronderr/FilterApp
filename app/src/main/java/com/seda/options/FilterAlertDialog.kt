@@ -47,6 +47,7 @@ class FilterAlertDialog(context: Context?, listener: EventListener): AlertDialog
         checkBox5 = dialogView.findViewById(R.id.chb_5)
         checkBox1!!.isChecked = true
 
+        updateText()
 
         setPositiveButton(context.getText(android.R.string.yes)){ dialog,which ->
             var filtersEnum: FiltersEnum = FiltersEnum.ALL
